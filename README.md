@@ -19,16 +19,13 @@ The oringial post is found [here](http://priceonomics.com/jobs/puzzle/)
 A full graph for the USD to USD arbitrage path is shown below
 
 ![Alt Text](https://s3-us-west-2.amazonaws.com/smarterme-assets/graph1.gif)
-
 # more explanation
-
 Why don't we want to consider a cyclical path?
 
 Consider the following graph
 
 ![Alt Text](https://s3-us-west-2.amazonaws.com/smarterme-assets/graph2.gif)
-
-If there is a path from EUR to BTC, it needs to go through the path BTC to JPY to EUR again so that it will get to the terminating node USD. And in this case, the only path that add to this cyclic path is the boost that EUR to BTC contributes. And if it indeed adds more, the EUR to BTC path on the left would have been considered. Hence, there is no need for this back reference path from EUR to BTC
+On the right, assume that there exists an higher arbitrage rate that goes from EUR to BTC, it needs to go through the path BTC to JPY to EUR again in order to to the terminating node USD. Since the BTC/JPY/EUR path does not add any value, the boost comes from the cyclic EUR/BTC path . And if it indeed adds more value, the EUR to BTC path on the left would have been considered. Hence, there is no need for this back reference path from EUR to BTC
 
 
 
