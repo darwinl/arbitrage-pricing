@@ -25,6 +25,7 @@ Why don't we want to consider a cyclical path?
 Consider the following graph
 
 ![Alt Text](https://s3-us-west-2.amazonaws.com/smarterme-assets/graph2.gif)
+
 On the right, assume that there exists an higher arbitrage rate that goes from EUR to BTC, it needs to go through the path BTC to JPY to EUR again in order to to the terminating node USD. Since the BTC/JPY/EUR path does not add any value, the boost comes from the cyclic EUR/BTC path . And if it indeed adds more value, the EUR to BTC path on the left would have been considered. Hence, there is no need for this back reference path from EUR to BTC
 
 
